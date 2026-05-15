@@ -1,45 +1,29 @@
 name: Feature Request
-description: Suggest a new feature for this project
+description: Suggest a new feature
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this feature request!
   - type: input
     id: name
     attributes:
-      label: What is your name?
+      label: Your Name
       placeholder: ex. Your Name
     validations:
       required: true
   - type: dropdown
-    id: request_type
+    id: type
     attributes:
-      label: Type of request?
+      label: Request Type
       options:
         - New Feature
         - Improvement
         - Other
-      validations:
-        required: true
-  - type: input
-    id: os
-    attributes:
-      label: What is the OS which you want to suggest?
-      placeholder: Windows/macOS/Linux/iOS/Android
+    validations:
+      required: true
   - type: textarea
     id: details
     attributes:
-      label: What are the details of your suggestion?
-      placeholder: Explain what you want
-      validations:
-        required: true
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Details
+      placeholder: Describe your request
+    validations:
+      required: true
